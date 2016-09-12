@@ -9,11 +9,14 @@
 #include "rang.hpp"
 
 genId::stats genId::generate(
-  const unsigned int numTimes, const unsigned int len, const char alphabet[])
+  const unsigned int numTimes, const unsigned int len)
 {
 	unsigned int duplicates = 0;
 	std::vector<std::string> v;
 	v.resize(numTimes);
+
+	const char alphabet[]
+	  = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	char shortId[10] = "";
 	std::random_device rd;

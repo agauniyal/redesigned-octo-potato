@@ -5,12 +5,11 @@ namespace genId {
 
 using stats        = std::pair<unsigned int, long>;
 using seqContainer = std::vector<std::pair<unsigned int, unsigned int>>;
-using u_int        = unsigned int;
 
-seqContainer make_sequence(const u_int = 5, const u_int = 8, const u_int = 3);
+seqContainer make_sequence(
+  const unsigned int = 5, const unsigned int = 8, const unsigned int = 3);
 
-stats generate(const u_int = 10, const u_int = 10, const char[]
-  = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ");
+stats generate(const unsigned int = 10, const unsigned int = 10);
 
-void printer(const u_int, const u_int, const genId::stats);
+void printer(const unsigned int, const unsigned int, const genId::stats);
 }
