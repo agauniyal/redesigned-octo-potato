@@ -1,0 +1,4 @@
+[wrap-git]
+directory=rang
+url=https://github.com/agauniyal/rang.git
+revision=head
